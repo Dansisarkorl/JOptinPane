@@ -1,0 +1,343 @@
+
+EJERCICIO # 1:
+
+ingreso de usuario para poder acceder de forma mas segura.
+
+String usuario="admin",respuesta="";
+         
+      respuesta=JOptionPane.showInputDialog("ingrese su usuario");
+          if (respuesta.equals(usuario)){
+              JOptionPane.showMessageDialog(null," Bienvenido");
+      } else{ 
+         JOptionPane.showMessageDialog(null,"el usuario es incorrecto");
+        
+            
+        
+               
+     }
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 2:
+
+ String n1,n2,n3,n4,n5,n6;
+      double l1,p1,l2,p2,l3,p3, prom1,prom2,prom3,promfinal;
+       
+       JOptionPane.showMessageDialog(null,"Bienvenidos al ingreso de notas");
+       
+       n1=JOptionPane.showInputDialog("Digite el 1er laboratorio");
+       l1=Integer.parseInt(n1);
+       
+       while (l1<0 || l1>10){
+           
+        JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+        n1=JOptionPane.showInputDialog("Digite el 1er laboratorio");
+       l1=Integer.parseInt(n1);
+       }
+       
+      n2=JOptionPane.showInputDialog("Digite el 1er parcial");
+      p1=Integer.parseInt(n2);
+       while (p1<0 || p1>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           
+           n2=JOptionPane.showInputDialog("Digite el 1er parcial");
+       p1=Integer.parseInt(n2);
+       }
+       
+       n3=JOptionPane.showInputDialog("Digite el 2do laboratorio");
+     l2=Integer.parseInt(n3);
+       while (l2<0 || l2>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           
+           n3=JOptionPane.showInputDialog("Digite el 2do laboratotio");
+       l2=Integer.parseInt(n3);
+       }
+       
+        n4=JOptionPane.showInputDialog(null,"Digite el 2do parcial");
+       p2=Integer.parseInt(n4);
+       while (p2<0 || p2>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           
+          n4=JOptionPane.showInputDialog("Digite el 2do parcial");
+       p2=Integer.parseInt(n4);
+       }
+       
+       n5=JOptionPane.showInputDialog("Digite el 3er laboratorio");
+        l3=Integer.parseInt(n5);
+       while (l3<0 || l3>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+          
+           n5=JOptionPane.showInputDialog("Digite el 3er laboratorio");
+        l3=Integer.parseInt(n5);
+       }
+       
+       n6=JOptionPane.showInputDialog("Digite el 3er parcial");
+       p3=Integer.parseInt(n6);
+       while (p3<0 || p3>10){
+           
+    JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           
+           n6=JOptionPane.showInputDialog("Digite el 3er parcial");
+      p3=Integer.parseInt(n6);
+       
+      
+      
+       }
+       
+       prom1=(l1*0.4)+(p1*0.6);
+       
+       prom2=(l2*0.4)+(p2*0.6);
+       prom3=(l3*0.4)+(p3*0.6);
+         
+         promfinal=(prom1+prom2+prom3)/3;
+       
+       
+       JOptionPane.showMessageDialog(null,"El promedio de las notas es : "+ promfinal);
+       
+       if (promfinal>=7){
+           JOptionPane.showMessageDialog(null,"Estado: \n" + " APROBADO ");
+           
+       }
+       else {
+           JOptionPane.showMessageDialog(null,"Estado: \n" + " REPROBADO ");
+          
+       }
+ 
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 3:
+
+  String z;
+      int compra; 
+        int total = 0;
+        
+        JOptionPane.showMessageDialog(null,"Bienvenidos a su zapateria ");
+       
+       z=JOptionPane.showInputDialog("Ingrese el monto de su compra ");
+        
+       compra=Integer.parseInt(z);
+        if (compra>150){
+            
+            total= (int) (compra-(compra*0.20));
+            
+            JOptionPane.showMessageDialog(null,"Aplica a un descuento del 20 % /n El total de su compra es : " +total);
+           
+           
+            
+        }
+        else{
+           JOptionPane.showMessageDialog(null,"No aplica a un descuento /n Su compra es de  " + compra);
+          
+        }
+        
+
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 4:
+ 
+ String hor;
+      int horas = 0, extr, mensual;
+        
+        JOptionPane.showMessageDialog(null,"Bienvenido" );
+       hor=JOptionPane.showInputDialog("Ingrese la cantidad de horas trabajadas");
+       horas=Integer.parseInt(hor);
+        
+        
+        if (horas>40){
+            extr=horas-40;
+           mensual=extr*15+(40*10);  
+        }
+        else{
+          mensual=horas*10;
+            
+        }
+        
+        JOptionPane.showMessageDialog(null,"El salario mensual es de : " + mensual);
+
+________________________________________________________________________________
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 5:
+
+
+String numm1,numm2,numm3,numm4,numm5;
+        int num1,num2,num3,num4,num5;
+        int z;
+
+		numm1=JOptionPane.showInputDialog("Ingrese el primer numero");
+		num1=Integer.parseInt(numm1);
+                
+		numm2=JOptionPane.showInputDialog("Ingrese el segundo numero");
+		num2=Integer.parseInt(numm2);
+                
+		numm3=JOptionPane.showInputDialog("Ingrese el tercer numero");
+		num3=Integer.parseInt(numm3);
+                
+		numm4=JOptionPane.showInputDialog("Ingrese el cuarto numero");
+		num4=Integer.parseInt(numm4);
+                
+		numm5=JOptionPane.showInputDialog("Ingrese el quinto numero");
+		num5=Integer.parseInt(numm5);
+	
+		if(num1>num2  &&  num2>num3  &&  num1>num5) {
+			z=num1;
+		}else {
+		if (num2>num1  &&  num2>num3  &&  num2>num5) {
+			z=num2;
+		}else {
+		if (num3>num1  &&  num3>num2  &&  num3>num5) {
+			z=num3;
+		}else {
+		if(num4>num1  &&  num4>num2  &&  num4>num5) {
+			z=num4;
+		}else {
+		if (num5>num1  &&  num5>num2  &&  num5>num4) {
+			z=num5;
+		}else {
+			z=num5;
+		}
+		}
+		}
+		}
+		}
+		JOptionPane.showMessageDialog(null,"El numero mayor es  : " + z);
+
+________________________________________________________________________________
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 6:
+     
+  String m1,m2;
+        int n1,n2;
+    
+     m1=JOptionPane.showInputDialog("Introduzca 1");
+        n1=Integer.parseInt(m1);
+     
+         m2=JOptionPane.showInputDialog("Introduzca 2");
+       n2=Integer.parseInt(m2);
+        
+       JOptionPane.showMessageDialog(null," La suma de los valores ingresados es"+(n1+n2)+"\n La resta es"+(n1-n2));    
+
+________________________________________________________________________________
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 7:
+
+int var=1;
+        
+        while (var<=100 ){
+           JOptionPane.showMessageDialog(null,"Iterando :" + var + " veces");
+            var++;
+        }
+
+
+
+
+________________________________________________________________________________
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 8:
+
+ String con,fil;
+        
+        int contador;
+        int fin;
+        con=JOptionPane.showInputDialog("Ingrese el valor incial");
+        contador=
+        System.out.println("Ingrese el valor final");
+        fin=reader.nextInt();
+        
+        
+        
+        while(contador<=fin){
+              System.out.println("");
+            System.out.println("Valor actual = " + contador);
+            contador++;
+            
+          
+            
+            if (contador<=7){
+                System.out.println("Aprobado");
+            }
+            else {
+                System.out.println("Reprobado");
+            }
+            
+        }
+        
+________________________________________________________________________________
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 7:
+
+
+Mostrar numeros de dos en dos hasta 100.
+
+ for (int num=0;num<=100;num=num+2){
+        JOptionPane.showMessageDialog(null,num);
+
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 8:
+
+Introduce cualquier cantidad de nota del 0 al 10 para saber si esta aprobado o reprobado.
+
+String n1; 
+     int num;  
+       n1=JOptionPane.showInputDialog("Introduce nota");
+        num=Integer.parseInt(n1);
+        if(num>=7){
+          JOptionPane.showMessageDialog(null,"Aprobado" );
+        }else if (num<7){
+           JOptionPane.showMessageDialog(null,"Reprobado" );
+       
+    }
+________________________________________________________________________________
+--------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************
+EJERCICIO # 9:
+
+
+
+
+
+
+digitar dos numeros por el ususario de dar el resultado de la suma
+
+ String num1;
+    String num2;
+    int numero1;
+    int numero2;
+    int suma;
+    
+    num1=JOptionPane.showInputDialog("ESCRIBA SU PRIMER NUMERO");
+     numero1=Integer.parseInt(num1);
+    num2=JOptionPane.showInputDialog("ESCRIBA SU SEGUNDO NUMERO");
+   
+    numero2=Integer.parseInt(num2);
+    suma=numero1+numero2;
+    JOptionPane.showMessageDialog(null,"la suma es : "+suma );
+        System.exit(0);
+    
