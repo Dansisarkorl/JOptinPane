@@ -1,0 +1,86 @@
+String n1,n2,n3,n4,n5,n6;
+      double l1,p1,l2,p2,l3,p3, prom1,prom2,prom3,promfinal;
+       
+       JOptionPane.showMessageDialog(null,"Bienvenidos al ingreso de notas");
+       
+       n1=JOptionPane.showInputDialog("Digite el 1er laboratorio");
+       l1=Integer.parseInt(n1);
+       
+       while (l1<0 || l1>10){
+           
+        JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+        n1=JOptionPane.showInputDialog("Digite el 1er laboratorio");
+       l1=Integer.parseInt(n1);
+       }
+       
+      n2=JOptionPane.showInputDialog("Digite el 1er parcial");
+      p1=Integer.parseInt(n2);
+       while (p1<0 || p1>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           
+           n2=JOptionPane.showInputDialog("Digite el 1er parcial");
+       p1=Integer.parseInt(n2);
+       }
+       
+       n3=JOptionPane.showInputDialog("Digite el 2do laboratorio");
+     l2=Integer.parseInt(n3);
+       while (l2<0 || l2>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           
+           n3=JOptionPane.showInputDialog("Digite el 2do laboratotio");
+       l2=Integer.parseInt(n3);
+       }
+       
+        n4=JOptionPane.showInputDialog(null,"Digite el 2do parcial");
+       p2=Integer.parseInt(n4);
+       while (p2<0 || p2>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           
+          n4=JOptionPane.showInputDialog("Digite el 2do parcial");
+       p2=Integer.parseInt(n4);
+       }
+       
+       n5=JOptionPane.showInputDialog("Digite el 3er laboratorio");
+        l3=Integer.parseInt(n5);
+       while (l3<0 || l3>10){
+           
+           JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+          
+           n5=JOptionPane.showInputDialog("Digite el 3er laboratorio");
+        l3=Integer.parseInt(n5);
+       }
+       
+       n6=JOptionPane.showInputDialog("Digite el 3er parcial");
+       p3=Integer.parseInt(n6);
+       while (p3<0 || p3>10){
+           
+    JOptionPane.showMessageDialog(null,"La nota debe de estar entre 0-10");
+           
+           n6=JOptionPane.showInputDialog("Digite el 3er parcial");
+      p3=Integer.parseInt(n6);
+       
+      
+      
+       }
+       
+       prom1=(l1*0.4)+(p1*0.6);
+       
+       prom2=(l2*0.4)+(p2*0.6);
+       prom3=(l3*0.4)+(p3*0.6);
+         
+         promfinal=(prom1+prom2+prom3)/3;
+       
+       
+       JOptionPane.showMessageDialog(null,"El promedio de las notas es : "+ promfinal);
+       
+       if (promfinal>=7){
+           JOptionPane.showMessageDialog(null,"Estado: \n" + " APROBADO ");
+           
+       }
+       else {
+           JOptionPane.showMessageDialog(null,"Estado: \n" + " REPROBADO ");
+          
+       }
