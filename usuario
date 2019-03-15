@@ -1,0 +1,12 @@
+String usuario="admin",respuesta="";
+         
+      respuesta=JOptionPane.showInputDialog("ingrese su usuario");
+          if (respuesta.equals(usuario)){
+              JOptionPane.showMessageDialog(null," Bienvenido");
+      } else{ 
+         JOptionPane.showMessageDialog(null,"el usuario es incorrecto");
+        
+            
+        
+               
+     }
